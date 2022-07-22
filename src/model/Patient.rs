@@ -16,13 +16,14 @@ use crate::model::Patient_Link::Patient_Link;
 use crate::model::Reference::Reference;
 use crate::model::ResourceList::ResourceList;
 use serde_json::json;
+use serde_json::Deserialize;
 use serde_json::value::Value;
 use std::borrow::Cow;
 
 /// Demographics and other administrative information about an individual or animal
 /// receiving care or other health-related services.
 
-#[derive(Debug)]
+#[derive(Debug, Deserialize)]
 pub struct Patient<'a> {
     pub(crate) value: Cow<'a, Value>,
 }
