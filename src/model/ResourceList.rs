@@ -147,9 +147,10 @@ use crate::model::ValueSet::ValueSet;
 use crate::model::VerificationResult::VerificationResult;
 use crate::model::VisionPrescription::VisionPrescription;
 use serde_json::value::Value;
+use serde::Deserialize;
 use std::borrow::Cow;
 
-#[derive(Debug)]
+#[derive(Debug, Deserialize)]
 pub struct ResourceList<'a> {
     pub(crate) value: Cow<'a, Value>,
 }
