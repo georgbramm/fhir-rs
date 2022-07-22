@@ -16,7 +16,7 @@ use crate::model::Patient_Link::Patient_Link;
 use crate::model::Reference::Reference;
 use crate::model::ResourceList::ResourceList;
 use serde_json::json;
-use serde_json::Deserialize;
+use serde::Deserialize;
 use serde_json::value::Value;
 use std::borrow::Cow;
 
